@@ -15,8 +15,28 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
-
+    <picture>
+      <source srcset="images/museum_800_square.jpg, images/museum_1600_square.jpg 2x, images/museum_2400_square.jpg 3x"
+        media="(min-width: 1600px)">
+      <source srcset="images/museum_640_square.jpg, images/museum_1280_square.jpg 2x, images/museum_1920_square.jpg 3x"
+        media="(min-width: 1280px)">
+      <source srcset="images/museum_480_square.jpg, images/museum_960_square.jpg 2x, images/museum_1440_square.jpg 3x"
+        media="(min-width: 960px)">
+      <source
+        srcset="images/museum_960_landscape.jpg, images/museum_1920_landscape.jpg 2x, images/museum_2880_landscape.jpg 3x"
+        media="(min-width: 960px)">
+      <source
+        srcset="images/museum_720_landscape.jpg, images/museum_1440_landscape.jpg 2x, images/museum_2160_landscape.jpg 3x"
+        media="(min-width: 720px)">
+      <source
+        srcset="images/museum_480_landscape.jpg, images/museum_960_landscape.jpg 2x, images/museum_1440_landscape.jpg 3x"
+        media="(min-width: 480px)">
+      <source
+        srcset="images/museum_320_landscape.jpg, images/museum_640_landscape.jpg 2x, images/museum_960_landscape.jpg 3x"
+        media="(min-width: 320px)">
+      <img class="responsive-image" src="images/museum.jpg" alt="Image of museum">
+    </picture>
+    </div>
   </header>
 </body>
 
